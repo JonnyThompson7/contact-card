@@ -1,7 +1,11 @@
 import _ from 'lodash';
 import "./form";
 import "./submit";
-import Logo from '../images/rias.jpg';
+
+import '../css/index.css';
+import { Tooltip, Toast, Popover } from 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Logo from '../images/logo.png';
 import Bear from '../images/bear.png';
 import Dog from '../images/dog.png';
 
@@ -15,6 +19,7 @@ function component() {
   const element = document.createElement('div');
 
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.classList.add('hello');
 
   return element;
 }
